@@ -1,0 +1,41 @@
+{
+  "name": "react-octicon",
+  "version": "1.0.0",
+  "description": "A GitHub Octicons icon React component",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "build-demo": "webpack --config=demo/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/insin/react-octicon"
+  },
+  "keywords": [
+    "react-component",
+    "octicon",
+    "icon"
+  ],
+  "author": "Jonny Buchanan <jonathan.buchanan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/insin/react-octicon/issues"
+  },
+  "homepage": "https://github.com/insin/react-octicon",
+  "dependencies": {
+    "octicons": "^2.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^5.6.14",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.2.2",
+    "css-loader": "^0.15.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.10.0"
+  }
+}
