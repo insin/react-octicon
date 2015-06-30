@@ -1,8 +1,8 @@
 {
   "name": "react-octicon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A GitHub Octicons icon React component",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "build-demo": "webpack --config=demo/webpack.config.js"
