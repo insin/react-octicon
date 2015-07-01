@@ -1,2 +1,4 @@
+.babelrc
+.gitignore
 demo/dist
 src
