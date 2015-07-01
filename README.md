@@ -2,6 +2,8 @@
 
 A [React](https://facebook.github.io/react/) component which renders a [GitHub Octicons](https://octicons.github.com/) icon.
 
+![All Octicons](octicons.gif)
+
 ### Demo
 
 https://insin.github.io/react-octicon/
