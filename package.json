@@ -1,6 +1,6 @@
 {
   "name": "react-octicon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A GitHub Octicons icon React component",
   "main": "./lib/index.js",
   "scripts": {
@@ -25,6 +25,9 @@
   "dependencies": {
     "octicons": "^2.2.0"
   },
+  "peerDependencies": {
+    "react": ">=0.13.0"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
     "babel": "^5.6.14",
@@ -34,6 +37,7 @@
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
     "node-libs-browser": "^0.5.2",
+    "react": ">=0.13.0",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
     "webpack": "^1.10.0"
