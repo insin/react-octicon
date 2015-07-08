@@ -52,8 +52,7 @@ var Demo = React.createClass({
         </datalist>{' '}
         <select name="name" value={name}
                 onChange={this.handleNameChange}
-                onKeyDown={this.handleNameChangeDelayed}
-                onKeyUp={this.handleNameChange} >
+                onKeyDown={this.handleNameChangeDelayed} >
           {OCTICON_NAMES.map(name => <option>{name}</option>)}
         </select>{' '}
         <label>
