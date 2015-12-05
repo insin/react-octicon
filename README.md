@@ -28,7 +28,7 @@ import {render} from 'react-dom'
 import Octicon from 'react-octicon'
 
 let App = () => <div>
-  <Octicon mrga spin name="sync"/>
+  <Octicon mega spin name="sync"/>
 </div>
 
 render(<App/>, document.querySelector('#app'))
