@@ -1,7 +1,7 @@
-.octicon-spin {
-  animation: octicon-spin 2s infinite linear;
+.spin-octicon {
+  animation: spin-octicon 2s infinite linear;
 }
-@keyframes octicon-spin {
+@keyframes spin-octicon {
   0% {
     transform: rotate(0deg);
   }

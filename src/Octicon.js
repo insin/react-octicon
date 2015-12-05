@@ -1,13 +1,13 @@
 require('../css/Octicon.css')
 
-var React = require('react')
+import React, {PropTypes} from 'react'
 
-var Octicon = React.createClass({
+let Octicon = React.createClass({
   propTypes: {
-    name: React.PropTypes.string.isRequired,
-    className: React.PropTypes.string,
-    mega: React.PropTypes.bool,
-    spin: React.PropTypes.bool
+    name: PropTypes.string.isRequired,
+    className: PropTypes.string,
+    mega: PropTypes.bool,
+    spin: PropTypes.bool
   },
   getDefaultProps() {
     return {
@@ -16,10 +16,10 @@ var Octicon = React.createClass({
     }
   },
   render() {
-    var {name, className, mega, spin, ...props} = this.props
-    var classNames = [mega ? 'mega-octicon' : 'octicon', `octicon-${name}`]
+    let {name, className, mega, spin, ...props} = this.props
+    let classNames = [mega ? 'mega-octicon' : 'octicon', `octicon-${name}`]
     if (spin) {
-      classNames.push('octicon-spin')
+      classNames.push('spin-octicon')
     }
     if (className) {
       classNames.push(className)
@@ -28,4 +28,4 @@ var Octicon = React.createClass({
   }
 })
 
-module.exports = Octicon
+export default Octicon
