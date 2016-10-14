@@ -5,7 +5,10 @@ import React, {PropTypes} from 'react'
 let Octicon = React.createClass({
   propTypes: {
     name: PropTypes.string.isRequired,
-    className: PropTypes.string,
+    className: React.PropTypes.oneOfType([
+      React.PropTypes.string,
+      React.PropTypes.func
+    ]),
     mega: PropTypes.bool,
     spin: PropTypes.bool
   },
