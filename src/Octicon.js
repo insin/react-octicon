@@ -1,6 +1,7 @@
 require('../css/Octicon.css')
 
-import React, {PropTypes} from 'react'
+import React from 'react'
+import PropTypes from 'proptypes'
 
 let Octicon = React.createClass({
   propTypes: {
