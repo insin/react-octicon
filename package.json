@@ -29,7 +29,8 @@
   },
   "homepage": "https://github.com/insin/react-octicon",
   "dependencies": {
-    "octicons": "4.x"
+    "octicons": "4.x",
+    "prop-types": "^15.5.7"
   },
   "peerDependencies": {
     "react": ">=0.13.0"
