@@ -11,6 +11,8 @@ A [React](https://facebook.github.io/react/) component which renders an icon usi
 > **Note:** Github Octicons has switched from providing an icon font to being a library for generating SVG markup for string templating engines, so this component uses the last version which provided an icon font, version 4.
 >
 > As such, the available icons and their appearance may not match with what's on the Github Octicons documentation site.
+>
+> If you want to use the latest version of GitHub Octicons, try [react-octicons](https://github.com/philschatz/react-octicons) or [react-icons](https://github.com/gorangajic/react-icons) instead, both of which provide a React component for each icon which renders an SVG.
 
 ### Demo
 
