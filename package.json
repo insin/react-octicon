@@ -1,6 +1,6 @@
 {
   "name": "react-octicon",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A GitHub Octicons icon React component",
   "main": "./lib/index.js",
   "scripts": {
