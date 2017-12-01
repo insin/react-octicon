@@ -1,3 +1,5 @@
-require('octicons/octicons/octicons.css')
+import 'octicons/build/font/octicons.css'
 
-module.exports = require('./Octicon')
+import Octicon from './Octicon'
+
+export default Octicon

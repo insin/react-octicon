@@ -4,9 +4,13 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-A [React](https://facebook.github.io/react/) component which renders a [GitHub Octicons](https://octicons.github.com/) icon.
+A [React](https://facebook.github.io/react/) component which renders an icon using the [GitHub Octicons](https://octicons.github.com/) icon font.
 
 ![All Octicons](octicons.gif)
+
+> **Note:** Github Octicons has switched from providing an icon font to being a library for generating SVG markup for string templating engines, so this component uses the last version which provided an icon font, version 4.
+>
+> As such, the available icons and their appearance may not match with what's on the Github Octicons documentation site.
 
 ### Demo
 
@@ -14,7 +18,7 @@ https://insin.github.io/react-octicon/
 
 ### Usage
 
-**Note: [Webpack](http://webpack.github.io/) is _required_ in order to use this component.**
+**Note: [Webpack](https://webpack.js.org) is _required_ in order to use this component.**
 
 Install and use the Octicon component like so:
 
@@ -45,20 +49,28 @@ This component handles the Octicons CSS dependency for you, but you must use Web
 For example, using the following webpack loaders:
 
 ```
-npm install --save-dev css-loader file-loader style-loader url-loader
+npm install --save-dev css-loader file-loader style-loader
 ```
 
 ```js
- module: {
-   loaders: [
-     /* ...other loader config here... */
-     {test: /\.css$/, loader: 'style!css'},
-     {test: /\.(otf|eot|svg|ttf|woff|woff2).*$/, loader: 'url?limit=8192'}
-   ]
- }
+module: {
+  rules: [
+    {
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        'css-loader'
+      ]
+    },
+    {
+      test: /\.(eot|otf|svg|ttf|woff|woff2)$/,
+      use: 'file-loader'
+    }
+  ]
+}
 ```
 
-See the [webpack Stylesheets documentation](http://webpack.github.io/docs/stylesheets.html) for more info.
+See Webpack's [Loading CSS documentation](https://webpack.js.org/guides/asset-management/#loading-css) for more info.
 
 ### Required props
 

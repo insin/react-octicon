@@ -1,7 +1,7 @@
 import expect from 'expect'
 import React from 'react'
-import {Simulate} from 'react-addons-test-utils'
 import {render, unmountComponentAtNode} from 'react-dom'
+import {Simulate} from 'react-dom/test-utils'
 
 import Octicon from 'src/'
 
@@ -29,7 +29,7 @@ describe('Octicon', () => {
 
   testClassName(<Octicon name="sync"/>, 'octicon octicon-sync')
   testClassName(<Octicon mega name="sync"/>, 'mega-octicon octicon-sync')
-  testClassName(<Octicon spin name ="sync"/>, 'octicon octicon-sync spin-octicon')
+  testClassName(<Octicon spin name="sync"/>, 'octicon octicon-sync spin-octicon')
   testClassName(<Octicon mega spin name="sync"/>, 'mega-octicon octicon-sync spin-octicon')
   testClassName(<Octicon mega spin name="sync" className="custom"/>, 'mega-octicon octicon-sync spin-octicon custom')
 
